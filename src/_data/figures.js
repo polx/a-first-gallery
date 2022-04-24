@@ -1,4 +1,3 @@
-const Image = require("@11ty/eleventy-img");
 const glob = require("glob");
 const fs = require("fs");
 

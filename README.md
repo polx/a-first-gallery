@@ -23,3 +23,11 @@ Any CG3 or PNG file inside the root and subfolders is yours to manage except for
 - the files `.eleventy.js`, `package.json`, `package-lock.json`
 - the directories `src` and `.github`
 
+
+## Credits
+
+Thanks to the eleventy team!
+This project originally started with the 
+[gallery of Raymond Camden](https://www.raymondcamden.com/2021/04/07/building-a-simple-image-gallery-with-eleventy)
+and got considerably helped by 
+[Ben Meyers' data cascade explanations](https://benmyers.dev/blog/eleventy-data-cascade/).
