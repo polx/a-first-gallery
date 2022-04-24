@@ -1,0 +1,11 @@
+---
+pagination:
+  data: figures
+  size: 1
+permalink: '{{ pagination.items[0].name }}.html'
+layout: figure
+---
+<script>
+  window.urlToLoad = "./{{pagination.items[0].file}}";
+  window.cabriConfig = {};
+</script>

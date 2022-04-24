@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/cssbox.css">
+    <title>{{pagination.items[0].title}}</title>
+    <script src="{{ galleryConfig.player }}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></head>
+    <meta property="og:image" content="{{pagination.items[0].thumbpath}}" />
+    <meta property="og:description" content="{{pagination.items[0].description}} | {{galleryConfig.title}}" />
+</head>
+<body>
+{{ content }}
+</body>
+</html>
