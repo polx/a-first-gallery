@@ -1,6 +1,7 @@
 {
   "scripts": {
     "start": "eleventy",
+    "build": "eleventy",
     "eleventy": "eleventy --watch",
     "debug": "set DEBUG=* & eleventy"
   },
