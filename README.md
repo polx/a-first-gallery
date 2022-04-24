@@ -16,6 +16,10 @@ This can be used online too. E.g. on github, bitbucket or gitlab:
 on these services it is possible to modify the configuration online and upload
 the `.cg3` files.
 
+For github pages, the actions are already there, you just need to activate Settings > Pages: Source: `gh-pages` (`/`) 
+and it will serve the gallery as a website at the URL indicated. 
+
+
 ## Files
 
 Any CG3 or PNG file inside the root and subfolders is yours to manage except for:
