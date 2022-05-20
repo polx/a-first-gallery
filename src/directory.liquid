@@ -1,0 +1,28 @@
+---
+pagination:
+  data: directories
+  size: 1
+permalink: '{{ pagination.items[0].name }}/index.html'
+layout: directory
+---
+<h1>{{ pagination.items[0].title }}</h1>
+
+<div id="gallery">
+  {% for figure in pagination.items[0].cg3s %}
+  <!-- figure {{figure}}-->
+  <div class="cssbox">
+    <a href="{{figure.fileTarget}}" id="figure{{forloop.index}}">
+      <img src="{{figure.thumbpath}}" class="cssbox_thumb"></a>
+    <p class="label">{{figure.title}}</p>
+    <a class="cssbox_close" href="#void"></a>
+    {% if forloop.first == false %}
+    <a class="cssbox_prev" href="#image{{ forloop.index | minus: 1 }}">&lt;</a>
+    {% endif %}
+    {% if forloop.last == false %}
+    <a class="cssbox_next" href="#image{{ forloop.index | plus: 1}}">&gt;</a>
+    {% endif %}
+  </div>
+  {% endfor %}
+  <br>
+  {% if pagination.items[0].isNotRoot %} <a href=".." class="goUp"><img src="{{pagination.items[0].toRoot}}/img/up.png"></a> {% endif %}
+</div>
