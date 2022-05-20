@@ -2,10 +2,10 @@
 pagination:
   data: figures
   size: 1
-permalink: '{{ pagination.items[0].name }}.html'
+permalink: '{{ pagination.items[0].fileTarget }}'
 layout: figure
 ---
 <script>
-  window.urlToLoad = "./{{pagination.items[0].file}}";
+  window.urlToLoad = "{{pagination.items[0].file}}";
   window.cabriConfig = {};
 </script>
