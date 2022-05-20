@@ -11,7 +11,7 @@ layout: directory
   {% for figure in pagination.items[0].cg3s %}
   <!-- figure {{figure}}-->
   <div class="cssbox">
-    <a href="{{figure.fileTarget}}" id="figure{{forloop.index}}">
+    <a href="{{figure.name}}" id="figure{{forloop.index}}">
       <img src="{{figure.thumbpath}}" class="cssbox_thumb"></a>
     <p class="label">{{figure.title}}</p>
     <a class="cssbox_close" href="#void"></a>

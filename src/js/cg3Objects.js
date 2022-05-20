@@ -56,7 +56,7 @@ const cg3Objects = {
     if(fs.existsSync(fileRoot + ".png")) {
       if(!fs.existsSync(`_site/${dir}/`))  fs.mkdirSync(`_site/${dir}/`, {recursive:true})
       copy(fileRoot + ".png", "_site/" + fileRoot + ".png")
-      thumbPath =  fileRoot + ".png";
+      thumbPath =  name + ".png";
     }
 
     if(!isDir)
@@ -66,7 +66,7 @@ const cg3Objects = {
       thumbpath: thumbPath,
       name: name,
       title: name.replace(/\/$/,""),
-      fileTarget: isDir ? name + "" : name + ".html",
+      fileTarget: isDir ? fileRoot + "index.html" : fileRoot + "/index.html",
       description: name
     }
     allCG3files[file] = o;
